@@ -31,7 +31,7 @@ jobs:
 - job: Linux
   pool:
     name: vmi531340
-    vmImage: ubuntu-18.04
+    vmImage: vmi531340
   steps:
   - checkout: none
 
@@ -73,7 +73,7 @@ jobs:
 - job: CreateGithubRelease
   pool:
     name: vmi531340
-    vmImage: ubuntu-18.04
+    vmImage: vmi531340
   dependsOn:
   - Linux
   condition: |
