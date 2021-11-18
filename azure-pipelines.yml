@@ -68,7 +68,59 @@ jobs:
       pathToPublish: $(Build.ArtifactStagingDirectory)
       artifactName: linux64
     displayName: Publish artifacts
+####################### Windows #######################
+- job: Windows
+  pool:
+    name: Default
+    vmImage: vs2017-win2016
+  condition: |
+      succeeded()
+  variables:
+    vsPath: C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise
+    vsCMakeDir: $(vsPath)\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin
+    vsMSBuildDir: $(vsPath)\MSBuild\15.0\Bin
+    VCINSTALLDIR: $(vsPath)\VC
+  strategy:
+    matrix:
+      win64:
+        opensslDir: openssl
+        opensslConfig: VC-WIN64A
+        generatorName: Visual Studio 15 2017 Win64
+        arch: 64
+  steps:
+  - checkout: none
+  
+  -bash: |
+      curl -L -O https://github.com/msys2/msys2-installer/releases/download/2021-07-25/msys2-x86_64-20210725.exe
+      -omsys2-x86_64-20210725.exe
+      pacman -Syu
+    displayName: Install MSYS2
 
+  - bash: |
+      mkdir phiblock && cd phiblock
+      git init
+      git remote add origin https://user:$(GithubPAT)@github.com/$(daemonsRepo)
+      git fetch --depth 1 origin $(Build.SourceBranch)
+      git checkout FETCH_HEAD
+    displayName: Clone daemons code
+  
+  - bash: |
+      cd phiblock
+      "$(vsCMakeDir)"/cmake.exe -G "$(generatorName)" --config RelWithDebInfo ..
+      CL=/MP
+      "$(vsMSBuildDir)"/msbuild.exe ALL_BUILD.vcxproj -maxcpucount -p:Configuration=RelWithDebInfo
+    displayName: Build daemons
+
+  - bash: |
+      7z a "$(Build.ArtifactStagingDirectory)"/$(System.TeamProject)-daemons-$(Build.SourceBranchName)-$(TagName)-win$(arch).zip \
+      phiblock/build/Linux/*/release/bin/*
+    displayName: Zip daemons
+
+  - task: PublishBuildArtifacts@1
+    inputs:
+      pathToPublish: $(Build.ArtifactStagingDirectory)
+      artifactName: win$(arch)
+    displayName: Publish artifacts
 #############################
 - job: CreateGithubRelease
   pool:
