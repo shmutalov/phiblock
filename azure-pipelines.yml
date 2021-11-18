@@ -60,10 +60,7 @@ jobs:
     displayName: Build daemons
 
   - script: |
-      ls
-      ls phiblock
-      ls phiblock/build
-      ls phiblock/build/*/release/bin
+      ls phiblock/build/Linux
       zip -v -j $(Build.ArtifactStagingDirectory)/$(System.TeamProject)-daemons-$(Build.SourceBranchName)-$(TagName)-linux64.zip phiblock/build/*/release/bin/*
     displayName: Zip daemons
 
