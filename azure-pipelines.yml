@@ -72,6 +72,7 @@ jobs:
 #############################
 - job: CreateGithubRelease
   pool:
+    name: vmi531340
     vmImage: ubuntu-18.04
   dependsOn:
   - Linux
