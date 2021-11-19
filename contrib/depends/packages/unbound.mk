@@ -3,7 +3,7 @@ $(package)_version=1.13.2
 $(package)_download_path=https://www.nlnetlabs.nl/downloads/$(package)/
 $(package)_file_name=$(package)-$($(package)_version).tar.gz
 $(package)_sha256_hash=0a13b547f3b92a026b5ebd0423f54c991e5718037fd9f72445817f6a040e1a83
-$(package)_dependencies=openssl
+$(package)_dependencies=openssl expat ldns
 
 define $(package)_set_vars
   $(package)_config_opts=--disable-shared --enable-static --without-pyunbound --prefix=$(host_prefix) --with-libexpat=$(host_prefix) --with-ssl=$(host_prefix) --with-libevent=no --without-pythonmodule --disable-flto --with-pthreads --with-libunbound-only
