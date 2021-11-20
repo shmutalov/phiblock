@@ -36,10 +36,6 @@ This guide explains how to set up the environment, and how to start the builds.
 
 You need to create a new user called `gitianuser` and be logged in as that user.  The user needs `sudo` access.
 
-```bash
-sudo adduser gitianuser
-sudo usermod -aG sudo gitianuser
-```
 
 LXC
 ---
@@ -87,7 +83,7 @@ Docker
 Prepare for building with docker:
 
 ```bash
-sudo bash -c 'apt-get update && apt-get upgrade -y && apt-get install git curl docker.io'
+sudo apt-get install git make curl docker.io
 ```
 
 Consider adding `gitianuser` to the `docker` group after reading about [the security implications](https://docs.docker.com/v17.09/engine/installation/linux/linux-postinstall/):
@@ -100,12 +96,13 @@ sudo usermod -aG docker gitianuser
 Optionally add yourself to the docker group. Note that this will give docker root access to your system.
 
 ```bash
-sudo usermod -aG docker $USER
+sudo usermod -aG docker gitianuser
 ```
 
 Manual Building
 -------------------
 
+The instructions below use the automated script [gitian-build.py](gitian-build.py) which only works in Ubuntu. 
 =======
 The script automatically installs some packages with apt. If you are not running it on a debian-like system, pass `--no-apt` along with the other
 arguments to it. It calls all available .yml descriptors, which in turn pass the build configurations for different platforms to gitian.
@@ -120,27 +117,21 @@ Initial Gitian Setup
 The `gitian-build.py` script will checkout different release tags, so it's best to copy it to the top level directory:
 
 ```bash
-cp monero/contrib/gitian/gitian-build.py .
+cp phiblock/contrib/gitian/gitian-build.py .
 ```
 
 ### Setup the required environment
 
-Common setup part:
-
-```bash
-su - gitianuser
-
-GH_USER=YOUR_GITHUB_USER_NAME
-VERSION=v0.17.2.0
-```
-
-Where `GH_USER` is your Github user name and `VERSION` is the version tag you want to build. 
-
 Setup for LXC:
 
 ```bash
+GH_USER=fluffypony
+VERSION=v0.17.2.0
+
 ./gitian-build.py --setup $GH_USER $VERSION
 ```
+
+Where `GH_USER` is your Github user name and `VERSION` is the version tag you want to build. 
 
 Setup for docker:
 
@@ -150,14 +141,12 @@ Setup for docker:
 
 While gitian and this build script does provide a way for you to sign the build directly, it is recommended to sign in a separate step. This script is only there for convenience. Separate steps for building can still be taken.
 In order to sign gitian builds on your host machine, which has your PGP key, 
-fork the [gitian.sigs repository](https://github.com/monero-project/gitian.sigs) and clone it on your host machine, 
+fork the [gitian.sigs repository](https://github.com/phiblock-project/gitian.sigs) and clone it on your host machine, 
 or pass the signed assert file back to your build machine.
 
 ```bash
-git clone https://github.com/monero-project/gitian.sigs/
-pushd gitian.sigs
-git remote add $GH_USER https://github.com/$GH_USER/gitian.sigs
-popd
+git clone git@github.com:phiblock-project/gitian.sigs.git
+git remote add $GH_USER git@github.com:$GH_USER/gitian.sigs.git
 ```
 
 Build the binaries
@@ -165,26 +154,13 @@ Build the binaries
 
 **Note:** if you intend to build MacOS binaries, please follow [these instructions](https://github.com/bitcoin-core/docs/blob/master/gitian-building/gitian-building-mac-os-sdk.md) to get the required SDK.
 
-Currently working MacOS solution:
-
-```bash
-curl -O https://bitcoincore.org/depends-sources/sdks/MacOSX10.11.sdk.tar.gz
-mv MacOSX10.11.sdk.tar.gz builder/inputs
-```
-
 To build the most recent tag (pass in `--docker` if using docker):
 
 ```bash
 ./gitian-build.py --detach-sign --no-commit --build $GH_USER $VERSION
 ```
 
-To speed up the build, use `-j 5 --memory 10000` as the first arguments, where `5` is the number of CPU's you allocated to the VM plus one, and 10000 is a little bit less than then the MB's of RAM you allocated. If there is memory corruption on your machine, try to tweak these values. A good rule of thumb is, that Monero currently needs about 2 GB of RAM per core. 
-
-A full example for `docker` would look like the following:
-
-```bash
-./gitian-build.py -j 5 --memory 10000 --docker --detach-sign --no-commit --build $GH_USER $VERSION
-```
+To speed up the build, use `-j 5 --memory 5000` as the first arguments, where `5` is the number of CPU's you allocated to the VM plus one, and 5000 is a little bit less than then the MB's of RAM you allocated. If there is memory corruption on your machine, try to tweak these values.
 
 If all went well, this produces a number of (uncommitted) `.assert` files in the gitian.sigs directory.
 
@@ -195,24 +171,8 @@ Take a look in the assert files and note the SHA256 checksums listed there.
 
 You should verify that the checksum that is listed matches each of the binaries you actually built.
 This may be done on Linux using the `sha256sum` command or on MacOS using `shasum --algorithm 256` for example.
-An example script to verify the checksums would be:
 
-```bash
-pushd out/${VERSION}
-
-for ASSERT in ../../sigs/${VERSION}-*/*/*.assert; do
-  if ! sha256sum --ignore-missing -c "${ASSERT}" ; then
-    echo "FAILED for ${ASSERT} ! Please inspect manually."
-  fi
-done
-
-popd
-```
-
-Don't ignore the incorrect formatting of the found assert files. These files you'll have to compare manually (currently OSX and FreeBSD).
-
-
-You can also look in the [gitian.sigs](https://github.com/monero-project/gitian.sigs/) repo and / or [getmonero.org release checksums](https://web.getmonero.org/downloads/hashes.txt) to see if others got the same checksum for the same version tag.  If there is ever a mismatch -- **STOP! Something is wrong**.  Contact others on IRC / github to figure out what is going on.
+You can also look in the [gitian.sigs](https://github.com/phiblock-project/gitian.sigs/) repo and / or [getmonero.org release checksums](https://web.getmonero.org/downloads/hashes.txt) to see if others got the same checksum for the same version tag.  If there is ever a mismatch -- **STOP! Something is wrong**.  Contact others on IRC / github to figure out what is going on.
 
 
 Signing assert files
@@ -221,7 +181,13 @@ Signing assert files
 If you chose to do detached signing using `--detach-sign` above (recommended), you need to copy these uncommitted changes to your host machine, then sign them using your gpg key like so:
 
 ```bash
-for ASSERT in sigs/${VERSION}-*/*/*.assert; do gpg --detach-sign ${ASSERT}; done
+GH_USER=fluffypony
+VERSION=v0.17.2.0
+
+gpg --detach-sign ${VERSION}-linux/${GH_USER}/phiblock-linux-*-build.assert
+gpg --detach-sign ${VERSION}-win/${GH_USER}/phiblock-win-*-build.assert
+gpg --detach-sign ${VERSION}-osx/${GH_USER}/phiblock-osx-*-build.assert
+gpg --detach-sign ${VERSION}-android/${GH_USER}/phiblock-android-*-build.assert
 ```
 
 This will create a `.sig` file for each `.assert` file above (2 files for each platform).
@@ -231,17 +197,16 @@ Submitting your signed assert files
 -----------------------------------
 
 Make a pull request (both the `.assert` and `.assert.sig` files) to the
-[monero-project/gitian.sigs](https://github.com/monero-project/gitian.sigs/) repository:
+[phiblock-project/gitian.sigs](https://github.com/phiblock-project/gitian.sigs/) repository:
 
 ```bash
-cd gitian.sigs
 git checkout -b $VERSION
 # add your assert and sig files...
 git commit -S -a -m "Add $GH_USER $VERSION"
 git push --set-upstream $GH_USER $VERSION
 ```
 
-**Note:** Please ensure your gpg public key is available to check signatures by adding it to the [gitian.sigs/gitian-pubkeys/](https://github.com/monero-project/gitian.sigs/tree/master/gitian-pubkeys) directory in a pull request.
+**Note:** Please ensure your gpg public key is available to check signatures by adding it to the [gitian.sigs/gitian-pubkeys/](https://github.com/phiblock-project/gitian.sigs/tree/master/gitian-pubkeys) directory in a pull request.
 
 
 More Build Options
@@ -249,7 +214,7 @@ More Build Options
 
 You can choose your own remote and commit hash by running for example:
 ```bash
-./gitian-build.py --detach-sign --no-commit --url https://github.com/moneromooo-monero/bitmonero -b moneromooo 1f5680c8db8f4cc7acc04a04c724b832003440fd
+./gitian-build.py --detach-sign --no-commit --url https://github.com/moneromooo-phiblock/bitmonero -b moneromooo 1f5680c8db8f4cc7acc04a04c724b832003440fd
 ```
 
 Note that you won't be able to build commits authored before the gitian scripts

@@ -29,7 +29,6 @@
 #define _REG_EXP_DEFINER_H_
 
 #include <boost/interprocess/detail/atomic.hpp>
-#include <boost/regex.hpp>
 #include "syncobj.h"
 
 namespace epee
