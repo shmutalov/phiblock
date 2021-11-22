@@ -95,7 +95,7 @@ class MiningTest():
         assert res_status.block_reward >= 600000000000
 
         # wait till we mined a few of them
-        timeout = 60 # randomx is slow to init
+        timeout = 240 # randomx is slow to init
         timeout_height = prev_height
         while True:
             time.sleep(1)
@@ -230,7 +230,7 @@ class MiningTest():
         assert new_seed_hash != res.seed_hash
         #print('First mining: ' + str(t0))
 
-        # pop all these blocks, and feed them again to phiblockd
+        # pop all these blocks, and feed them again to monerod
         print('Recreating the chain')
         res = daemon.get_info()
         height = res.height

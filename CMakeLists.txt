@@ -57,6 +57,14 @@ endif()
 
 enable_language(C ASM)
 
+# Require C11/C++11 and disable extensions for all targets
+set(CMAKE_C_STANDARD 11)
+set(CMAKE_C_STANDARD_REQUIRED ON)
+set(CMAKE_C_EXTENSIONS OFF)
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
 function (die msg)
   if (NOT WIN32)
     string(ASCII 27 Esc)
@@ -268,6 +276,7 @@ if(NOT MANUAL_SUBMODULES)
     
     message(STATUS "Checking submodules")
     check_submodule(external/miniupnp)
+    check_submodule(external/unbound)
     check_submodule(external/rapidjson)
     check_submodule(external/trezor-common)
     check_submodule(external/randomx)
@@ -278,7 +287,7 @@ endif()
 set(CMAKE_C_FLAGS_RELEASE "-DNDEBUG ${OPT_FLAGS_RELEASE}")
 set(CMAKE_CXX_FLAGS_RELEASE "-DNDEBUG ${OPT_FLAGS_RELEASE}")
 
-# set this to 0 if per-block checkpoint needs to be disabled, otherwise 1
+# set this to 0 if per-block checkpoint needs to be disabled
 set(PER_BLOCK_CHECKPOINT 0)
 
 if(PER_BLOCK_CHECKPOINT)
@@ -492,7 +501,7 @@ if (CMAKE_SYSTEM_NAME MATCHES "(SunOS|Solaris)")
 endif ()
 
 if (APPLE AND NOT IOS)
-  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -march=x86-64 -fvisibility=default -std=c++11")
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fvisibility=default")
   if (NOT OPENSSL_ROOT_DIR)
       EXECUTE_PROCESS(COMMAND brew --prefix openssl
         OUTPUT_VARIABLE OPENSSL_ROOT_DIR
@@ -534,12 +543,13 @@ ExternalProject_Add(generate_translations_header
   BINARY_DIR "${CMAKE_CURRENT_BINARY_DIR}/translations"
   STAMP_DIR ${LRELEASE_PATH}
   CMAKE_ARGS -DLRELEASE_PATH=${LRELEASE_PATH}
-  INSTALL_COMMAND ${CMAKE_COMMAND} -E echo "")
+  INSTALL_COMMAND cmake -E echo "")
 include_directories("${CMAKE_CURRENT_BINARY_DIR}/translations")
 add_subdirectory(external)
 
 # Final setup for libunbound
-include_directories(${UNBOUND_INCLUDE_DIR})
+include_directories(${UNBOUND_INCLUDE})
+link_directories(${UNBOUND_LIBRARY_DIRS})
 
 # Final setup for easylogging++
 include_directories(${EASYLOGGING_INCLUDE})
@@ -673,14 +683,14 @@ else()
   endif()
   set(C_WARNINGS "-Waggregate-return -Wnested-externs -Wold-style-definition -Wstrict-prototypes")
   set(CXX_WARNINGS "-Wno-reorder -Wno-missing-field-initializers")
-  try_compile(STATIC_ASSERT_RES "${CMAKE_CURRENT_BINARY_DIR}/static-assert" "${CMAKE_CURRENT_SOURCE_DIR}/cmake/test-static-assert.c" COMPILE_DEFINITIONS "-std=c11")
+  try_compile(STATIC_ASSERT_RES "${CMAKE_CURRENT_BINARY_DIR}/static-assert" "${CMAKE_CURRENT_SOURCE_DIR}/cmake/test-static-assert.c" CMAKE_FLAGS -DCMAKE_C_STANDARD=11)
   if(STATIC_ASSERT_RES)
     set(STATIC_ASSERT_FLAG "")
   else()
     set(STATIC_ASSERT_FLAG "-Dstatic_assert=_Static_assert")
   endif()
 
-  try_compile(STATIC_ASSERT_CPP_RES "${CMAKE_CURRENT_BINARY_DIR}/static-assert" "${CMAKE_CURRENT_SOURCE_DIR}/cmake/test-static-assert.cpp" COMPILE_DEFINITIONS "-std=c++11")
+  try_compile(STATIC_ASSERT_CPP_RES "${CMAKE_CURRENT_BINARY_DIR}/static-assert" "${CMAKE_CURRENT_SOURCE_DIR}/cmake/test-static-assert.cpp" CMAKE_FLAGS -DCMAKE_CXX_STANDARD=11)
   if(STATIC_ASSERT_CPP_RES)
     set(STATIC_ASSERT_CPP_FLAG "")
   else()
@@ -769,8 +779,8 @@ else()
   message(STATUS "Using C++ security hardening flags: ${CXX_SECURITY_FLAGS}")
   message(STATUS "Using linker security hardening flags: ${LD_SECURITY_FLAGS}")
 
-  set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c11 -D_GNU_SOURCE ${MINGW_FLAG} ${STATIC_ASSERT_FLAG} ${WARNINGS} ${C_WARNINGS} ${COVERAGE_FLAGS} ${PIC_FLAG} ${C_SECURITY_FLAGS}")
-  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -D_GNU_SOURCE ${MINGW_FLAG} ${STATIC_ASSERT_CPP_FLAG} ${WARNINGS} ${CXX_WARNINGS} ${COVERAGE_FLAGS} ${PIC_FLAG} ${CXX_SECURITY_FLAGS}")
+  set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -D_GNU_SOURCE ${MINGW_FLAG} ${STATIC_ASSERT_FLAG} ${WARNINGS} ${C_WARNINGS} ${COVERAGE_FLAGS} ${PIC_FLAG} ${C_SECURITY_FLAGS}")
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -D_GNU_SOURCE ${MINGW_FLAG} ${STATIC_ASSERT_CPP_FLAG} ${WARNINGS} ${CXX_WARNINGS} ${COVERAGE_FLAGS} ${PIC_FLAG} ${CXX_SECURITY_FLAGS}")
   set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} ${LD_SECURITY_FLAGS} ${LD_BACKCOMPAT_FLAGS}")
 
   # With GCC 6.1.1 the compiled binary malfunctions due to aliasing. Until that
@@ -880,7 +890,7 @@ else()
     set(DEBUG_FLAGS "${DEBUG_FLAGS} -O0 ")
   endif()
 
-  # At least some CLANGs default to not enough for phiblock
+  # At least some CLANGs default to not enough for monero
   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -ftemplate-depth=900")
 
   if(NOT DEFINED USE_LTO_DEFAULT)
@@ -1119,8 +1129,6 @@ option(BUILD_GUI_DEPS "Build GUI dependencies." OFF)
 # on libunbound shipped with their distribution instead
 option(INSTALL_VENDORED_LIBUNBOUND "Install libunbound binary built from source vendored with this repo." OFF)
 
-
-CHECK_C_COMPILER_FLAG(-std=c11 HAVE_C11)
 
 find_package(PythonInterp)
 find_program(iwyu_tool_path NAMES iwyu_tool.py iwyu_tool)

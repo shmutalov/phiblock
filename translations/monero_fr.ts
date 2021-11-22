@@ -19,7 +19,7 @@
     <message>
         <location filename="../src/wallet/api/pending_transaction.cpp" line="91"/>
         <source>Attempting to save transaction to file, but specified file(s) exist. Exiting to not risk overwriting. File:</source>
-        <translation>Tentative d&apos;enregistrement d&apos;une transaction dans un fichier, mais le fichier spécifié existe déjà. Sortie pour ne pas risquer de l&apos;écraser. Fichier :</translation>
+        <translation>Tentative d&apos;enregistrement d&apos;une transaction dans un fichier, mais le fichier spécifié existe déjà. Sortie pour ne pas risquer de l&apos;écraser. Fichier :</translation>
     </message>
     <message>
         <location filename="../src/wallet/api/pending_transaction.cpp" line="98"/>
@@ -39,17 +39,17 @@
     <message>
         <location filename="../src/wallet/api/pending_transaction.cpp" line="145"/>
         <source>transaction %s was rejected by daemon with status: </source>
-        <translation>la transaction %s a été rejetée par le démon avec le statut : </translation>
+        <translation>la transaction %s a été rejetée par le démon avec le statut : </translation>
     </message>
     <message>
         <location filename="../src/wallet/api/pending_transaction.cpp" line="150"/>
         <source>. Reason: </source>
-        <translation>. Raison : </translation>
+        <translation>. Raison : </translation>
     </message>
     <message>
         <location filename="../src/wallet/api/pending_transaction.cpp" line="152"/>
         <source>Unknown exception: </source>
-        <translation>Exception inconnue : </translation>
+        <translation>Exception inconnue : </translation>
     </message>
     <message>
         <location filename="../src/wallet/api/pending_transaction.cpp" line="155"/>
@@ -139,7 +139,7 @@
         <location filename="../src/wallet/api/wallet.cpp" line="1517"/>
         <location filename="../src/wallet/api/wallet.cpp" line="1606"/>
         <source>RPC error: </source>
-        <translation>Erreur RPC : </translation>
+        <translation>Erreur RPC : </translation>
     </message>
     <message>
         <location filename="../src/wallet/api/wallet.cpp" line="1545"/>
@@ -203,7 +203,7 @@
         <location filename="../src/wallet/api/wallet.cpp" line="669"/>
         <location filename="../src/wallet/api/wallet.cpp" line="686"/>
         <source>failed to generate new wallet: </source>
-        <translation>échec de la génération du nouveau portefeuille : </translation>
+        <translation>échec de la génération du nouveau portefeuille : </translation>
     </message>
     <message>
         <location filename="../src/wallet/api/wallet.cpp" line="955"/>
@@ -238,17 +238,17 @@
     <message>
         <location filename="../src/wallet/api/wallet.cpp" line="1201"/>
         <source>Failed to import key images: </source>
-        <translation>Échec de l&apos;importation des images de clé : </translation>
+        <translation>Échec de l&apos;importation des images de clé : </translation>
     </message>
     <message>
         <location filename="../src/wallet/api/wallet.cpp" line="1233"/>
         <source>Failed to get subaddress label: </source>
-        <translation>Échec de la récupération de l&apos;étiquette de sous-adresse : </translation>
+        <translation>Échec de la récupération de l&apos;étiquette de sous-adresse : </translation>
     </message>
     <message>
         <location filename="../src/wallet/api/wallet.cpp" line="1246"/>
         <source>Failed to set subaddress label: </source>
-        <translation>Échec de l&apos;affectation de l&apos;étiquette de sous-adresse : </translation>
+        <translation>Échec de l&apos;affectation de l&apos;étiquette de sous-adresse : </translation>
     </message>
     <message>
         <location filename="../src/wallet/api/wallet.cpp" line="615"/>
@@ -374,7 +374,7 @@
         <location filename="../src/wallet/api/wallet.cpp" line="1555"/>
         <location filename="../src/wallet/api/wallet.cpp" line="1646"/>
         <source>transaction %s was rejected by daemon with status: </source>
-        <translation>la transaction %s a été rejetée par le démon avec le statut : </translation>
+        <translation>la transaction %s a été rejetée par le démon avec le statut : </translation>
     </message>
     <message>
         <location filename="../src/wallet/api/wallet.cpp" line="1560"/>
@@ -392,19 +392,19 @@
         <location filename="../src/wallet/api/wallet.cpp" line="1564"/>
         <location filename="../src/wallet/api/wallet.cpp" line="1655"/>
         <source>unknown transfer error: </source>
-        <translation>erreur de transfert inconnue : </translation>
+        <translation>erreur de transfert inconnue : </translation>
     </message>
     <message>
         <location filename="../src/wallet/api/wallet.cpp" line="1566"/>
         <location filename="../src/wallet/api/wallet.cpp" line="1657"/>
         <source>internal error: </source>
-        <translation>erreur interne : </translation>
+        <translation>erreur interne : </translation>
     </message>
     <message>
         <location filename="../src/wallet/api/wallet.cpp" line="1568"/>
         <location filename="../src/wallet/api/wallet.cpp" line="1659"/>
         <source>unexpected error: </source>
-        <translation>erreur inattendue : </translation>
+        <translation>erreur inattendue : </translation>
     </message>
     <message>
         <location filename="../src/wallet/api/wallet.cpp" line="1570"/>
@@ -663,7 +663,7 @@
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="690"/>
         <source>Commands: </source>
-        <translation>Commandes : </translation>
+        <translation>Commandes : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="5065"/>
@@ -678,17 +678,17 @@
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="3677"/>
         <source>set seed: needs an argument. available options: language</source>
-        <translation>set seed : requiert un argument. options disponibles : language</translation>
+        <translation>set seed : requiert un argument. options disponibles : language</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="3719"/>
         <source>set: unrecognized argument(s)</source>
-        <translation>set : argument(s) non reconnu(s)</translation>
+        <translation>set : argument(s) non reconnu(s)</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="4904"/>
         <source>wallet file path not valid: </source>
-        <translation>chemin du fichier portefeuille non valide : </translation>
+        <translation>chemin du fichier portefeuille non valide : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="3789"/>
@@ -743,17 +743,17 @@
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="4584"/>
         <source>wallet failed to connect to daemon: </source>
-        <translation>échec de la connexion du portefeuille au démon : </translation>
+        <translation>échec de la connexion du portefeuille au démon : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="4592"/>
         <source>Daemon uses a different RPC major version (%u) than the wallet (%u): %s. Either update one of them, or use --allow-mismatched-daemon-version.</source>
-        <translation>Le démon utilise une version majeure de RPC (%u) différente de celle du portefeuille (%u) : %s. Mettez l&apos;un des deux à jour, ou utilisez --allow-mismatched-daemon-version.</translation>
+        <translation>Le démon utilise une version majeure de RPC (%u) différente de celle du portefeuille (%u) : %s. Mettez l&apos;un des deux à jour, ou utilisez --allow-mismatched-daemon-version.</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="4613"/>
         <source>List of available languages for your wallet&apos;s seed:</source>
-        <translation>Liste des langues disponibles pour la phrase mnémonique de votre portefeuille :</translation>
+        <translation>Liste des langues disponibles pour la phrase mnémonique de votre portefeuille :</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="4699"/>
@@ -766,7 +766,7 @@
         <location filename="../src/simplewallet/simplewallet.cpp" line="4715"/>
         <location filename="../src/simplewallet/simplewallet.cpp" line="4789"/>
         <source>Generated new wallet: </source>
-        <translation>Nouveau portefeuille généré : </translation>
+        <translation>Nouveau portefeuille généré : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="4724"/>
@@ -774,7 +774,7 @@
         <location filename="../src/simplewallet/simplewallet.cpp" line="4838"/>
         <location filename="../src/simplewallet/simplewallet.cpp" line="4893"/>
         <source>failed to generate new wallet: </source>
-        <translation>échec de la génération du nouveau portefeuille : </translation>
+        <translation>échec de la génération du nouveau portefeuille : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="4935"/>
@@ -803,7 +803,7 @@
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="4980"/>
         <source>failed to load wallet: </source>
-        <translation>échec du chargement du portefeuille : </translation>
+        <translation>échec du chargement du portefeuille : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="4997"/>
@@ -825,7 +825,7 @@
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="5250"/>
         <source>mining has NOT been started: </source>
-        <translation>la mine n&apos;a PAS démarré : </translation>
+        <translation>la mine n&apos;a PAS démarré : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="5270"/>
@@ -835,7 +835,7 @@
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="5272"/>
         <source>mining has NOT been stopped: </source>
-        <translation>la mine n&apos;a PAS été stoppée : </translation>
+        <translation>la mine n&apos;a PAS été stoppée : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="5409"/>
@@ -861,23 +861,23 @@
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="5612"/>
         <source>Refresh done, blocks received: </source>
-        <translation>Rafraîchissement effectué, blocs reçus : </translation>
+        <translation>Rafraîchissement effectué, blocs reçus : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="6933"/>
         <source>payment id has invalid format, expected 16 or 64 character hex string: </source>
-        <translation>format d&apos;identifiant de paiement invalide, 16 ou 64 caractères hexadécimaux attendus : </translation>
+        <translation>format d&apos;identifiant de paiement invalide, 16 ou 64 caractères hexadécimaux attendus : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="6303"/>
         <source>bad locked_blocks parameter:</source>
-        <translation>mauvais paramètre locked_blocks :</translation>
+        <translation>mauvais paramètre locked_blocks :</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="6953"/>
         <location filename="../src/simplewallet/simplewallet.cpp" line="7211"/>
         <source>a single transaction cannot use more than one payment id: </source>
-        <translation>une unique transaction ne peut pas utiliser plus d&apos;un ID de paiement : </translation>
+        <translation>une unique transaction ne peut pas utiliser plus d&apos;un ID de paiement : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="6403"/>
@@ -1242,7 +1242,7 @@ By using &apos;sync&apos; processing of waiting messages with multisig sync info
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="6475"/>
         <source>Failed to check for backlog: </source>
-        <translation>Échec de la vérification du backlog : </translation>
+        <translation>Échec de la vérification du backlog : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="6524"/>
@@ -1265,7 +1265,7 @@ Transaction </translation>
         <location filename="../src/simplewallet/simplewallet.cpp" line="7006"/>
         <source>WARNING: Outputs of multiple addresses are being used together, which might potentially compromise your privacy.
 </source>
-        <translation>ATTENTION : Des sorties de multiples adresses sont utilisées ensemble, ce qui pourrait potentiellement compromettre votre confidentialité.
+        <translation>ATTENTION : Des sorties de multiples adresses sont utilisées ensemble, ce qui pourrait potentiellement compromettre votre confidentialité.
 </translation>
     </message>
     <message>
@@ -1325,7 +1325,7 @@ Transaction </translation>
         <location filename="../src/simplewallet/simplewallet.cpp" line="7276"/>
         <location filename="../src/simplewallet/simplewallet.cpp" line="7288"/>
         <source>Unsigned transaction(s) successfully written to file: </source>
-        <translation>Transaction(s) non signée(s) écrite(s) dans le fichier avec succès : </translation>
+        <translation>Transaction(s) non signée(s) écrite(s) dans le fichier avec succès : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="6617"/>
@@ -1941,7 +1941,7 @@ Transaction </translation>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="7596"/>
         <source>Failed to sign transaction: </source>
-        <translation>Échec de signature de transaction : </translation>
+        <translation>Échec de signature de transaction : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="7617"/>
@@ -1957,7 +1957,7 @@ Transaction </translation>
         <location filename="../src/simplewallet/simplewallet.cpp" line="5634"/>
         <location filename="../src/simplewallet/simplewallet.cpp" line="5969"/>
         <source>RPC error: </source>
-        <translation>Erreur RPC : </translation>
+        <translation>Erreur RPC : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="740"/>
@@ -1975,7 +1975,7 @@ Transaction </translation>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="905"/>
         <source>Error with wallet rewrite: </source>
-        <translation>Erreur avec la réécriture du portefeuille : </translation>
+        <translation>Erreur avec la réécriture du portefeuille : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="2627"/>
@@ -1986,7 +1986,7 @@ Transaction </translation>
         <location filename="../src/simplewallet/simplewallet.cpp" line="2645"/>
         <location filename="../src/simplewallet/simplewallet.cpp" line="2707"/>
         <source>invalid count: must be an unsigned integer</source>
-        <translation>nombre invalide : un entier non signé est attendu</translation>
+        <translation>nombre invalide : un entier non signé est attendu</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="2663"/>
@@ -1997,13 +1997,13 @@ Transaction </translation>
         <location filename="../src/simplewallet/simplewallet.cpp" line="4421"/>
         <location filename="../src/simplewallet/simplewallet.cpp" line="4441"/>
         <source>bad m_restore_height parameter: </source>
-        <translation>mauvais paramètre m_restore_height : </translation>
+        <translation>mauvais paramètre m_restore_height : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="4385"/>
         <location filename="../src/simplewallet/simplewallet.cpp" line="4432"/>
         <source>Restore height is: </source>
-        <translation>La hauteur de restauration est : </translation>
+        <translation>La hauteur de restauration est : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="5360"/>
@@ -2018,7 +2018,7 @@ Transaction </translation>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="5644"/>
         <source>internal error: </source>
-        <translation>erreur interne : </translation>
+        <translation>erreur interne : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="1652"/>
@@ -2026,7 +2026,7 @@ Transaction </translation>
         <location filename="../src/simplewallet/simplewallet.cpp" line="5649"/>
         <location filename="../src/simplewallet/simplewallet.cpp" line="5974"/>
         <source>unexpected error: </source>
-        <translation>erreur inattendue : </translation>
+        <translation>erreur inattendue : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="1578"/>
@@ -2046,17 +2046,17 @@ Transaction </translation>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="5659"/>
         <source>refresh failed: </source>
-        <translation>échec du rafraîchissement : </translation>
+        <translation>échec du rafraîchissement : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="5659"/>
         <source>Blocks received: </source>
-        <translation>Blocs reçus : </translation>
+        <translation>Blocs reçus : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="5700"/>
         <source>unlocked balance: </source>
-        <translation>solde débloqué : </translation>
+        <translation>solde débloqué : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="3696"/>
@@ -2081,17 +2081,17 @@ Transaction </translation>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="704"/>
         <source>Unknown command: </source>
-        <translation>Commande inconnue : </translation>
+        <translation>Commande inconnue : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="711"/>
         <source>Command usage: </source>
-        <translation>Usage de la commande : </translation>
+        <translation>Usage de la commande : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="714"/>
         <source>Command description: </source>
-        <translation>Description de la commande : </translation>
+        <translation>Description de la commande : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="780"/>
@@ -2111,12 +2111,12 @@ Transaction </translation>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="942"/>
         <source>Error: failed to estimate backlog array size: </source>
-        <translation>Erreur : échec de l&apos;estimation de la taille du tableau d&apos;arriéré : </translation>
+        <translation>Erreur : échec de l&apos;estimation de la taille du tableau d&apos;arriéré : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="947"/>
         <source>Error: bad estimated backlog array size</source>
-        <translation>Erreur : mauvaise estimation de la taille du tableau d&apos;arriéré</translation>
+        <translation>Erreur : mauvaise estimation de la taille du tableau d&apos;arriéré</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="959"/>
@@ -2181,17 +2181,17 @@ Transaction </translation>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="1089"/>
         <source>Error creating multisig: </source>
-        <translation>Erreur de création multisig : </translation>
+        <translation>Erreur de création multisig : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="1096"/>
         <source>Error creating multisig: new wallet is not multisig</source>
-        <translation>Erreur de création multisig : le nouveau portefeuille n&apos;est pas multisig</translation>
+        <translation>Erreur de création multisig : le nouveau portefeuille n&apos;est pas multisig</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="1099"/>
         <source> multisig address: </source>
-        <translation> adresse multisig : </translation>
+        <translation> adresse multisig : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="1123"/>
@@ -2215,7 +2215,7 @@ Transaction </translation>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="1150"/>
         <source>Failed to finalize multisig: </source>
-        <translation>Échec de finalisation multisig : </translation>
+        <translation>Échec de finalisation multisig : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="1211"/>
@@ -2234,7 +2234,7 @@ Transaction </translation>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="1280"/>
         <source>Error exporting multisig info: </source>
-        <translation>Erreur d&apos;importation des infos multisig : </translation>
+        <translation>Erreur d&apos;importation des infos multisig : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="1284"/>
@@ -2249,12 +2249,12 @@ Transaction </translation>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="1354"/>
         <source>Failed to import multisig info: </source>
-        <translation>Échec de l&apos;importation des infos multisig : </translation>
+        <translation>Échec de l&apos;importation des infos multisig : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="1365"/>
         <source>Failed to update spent status after importing multisig info: </source>
-        <translation>Échec de la mise à jour de l&apos;état des dépenses après l&apos;importation des infos multisig : </translation>
+        <translation>Échec de la mise à jour de l&apos;état des dépenses après l&apos;importation des infos multisig : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="1371"/>
@@ -2277,12 +2277,12 @@ Transaction </translation>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="1465"/>
         <source>Multisig error: </source>
-        <translation>Erreur multisig : </translation>
+        <translation>Erreur multisig : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="1470"/>
         <source>Failed to sign multisig transaction: </source>
-        <translation>Échec de la signature de la transaction multisig : </translation>
+        <translation>Échec de la signature de la transaction multisig : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="1493"/>
@@ -2321,7 +2321,7 @@ Transaction </translation>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="1647"/>
         <source>Saved exported multisig transaction file(s): </source>
-        <translation>Transaction multisig enregistrée dans le(s) fichier(s) : </translation>
+        <translation>Transaction multisig enregistrée dans le(s) fichier(s) : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="1912"/>
@@ -2697,8 +2697,8 @@ Si l&apos;argument &quot;tag_description&quot; est spécifié, le texte arbitrai
  ask-password &lt;0|1|2   (or never|action|decrypt)&gt;
    action: ask the password before many actions such as transfer, etc
    decrypt: same as action, but keeps the spend key encrypted in memory when not needed
- unit &lt;phiblock|millinero|micronero|nanonero|piconero&gt;
-   Set the default phiblock (sub-)unit.
+ unit &lt;monero|millinero|micronero|nanonero|piconero&gt;
+   Set the default monero (sub-)unit.
  min-outputs-count [n]
    Try to keep at least that many outputs of value at least min-outputs-value.
  min-outputs-value [n]
@@ -2732,7 +2732,7 @@ Si l&apos;argument &quot;tag_description&quot; est spécifié, le texte arbitrai
  track-uses &lt;1|0&gt;
    Whether to keep track of owned outputs uses.
  setup-background-mining &lt;1|0&gt;
-   Whether to enable background mining. Set this to support the network and to get a chance to receive new phiblock.
+   Whether to enable background mining. Set this to support the network and to get a chance to receive new monero.
  device-name &lt;device_name[:device_spec]&gt;
    Device name for hardware wallet.
  export-format &lt;&quot;binary&quot;|&quot;ascii&quot;&gt;
@@ -2997,7 +2997,7 @@ Sinon, vous prouvez le plus petit solde supérieur à &lt;montant&gt; dans votre
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="3814"/>
         <source>No wallet found with that name. Confirm creation of new wallet named: </source>
-        <translation>Aucun portefeuille avec ce nom trouvé. Confirmer la création d&apos;un nouveau portefeuille nommé : </translation>
+        <translation>Aucun portefeuille avec ce nom trouvé. Confirmer la création d&apos;un nouveau portefeuille nommé : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="3940"/>
@@ -3028,17 +3028,17 @@ Sinon, vous prouvez le plus petit solde supérieur à &lt;montant&gt; dans votre
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="4196"/>
         <source>Error: expected M/N, but got: </source>
-        <translation>Erreur : M/N attendu, mais lu : </translation>
+        <translation>Erreur : M/N attendu, mais lu : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="4201"/>
         <source>Error: expected N &gt; 1 and N &lt;= M, but got: </source>
-        <translation>Erreur : N &gt; 1 et N &lt;= M attendu, mais lu : </translation>
+        <translation>Erreur : N &gt; 1 et N &lt;= M attendu, mais lu : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="4206"/>
         <source>Error: M/N is currently unsupported. </source>
-        <translation>Erreur : M/N n&apos;est actuellement pas supporté. </translation>
+        <translation>Erreur : M/N n&apos;est actuellement pas supporté. </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="4209"/>
@@ -3058,7 +3058,7 @@ Sinon, vous prouvez le plus petit solde supérieur à &lt;montant&gt; dans votre
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="4289"/>
         <source>Error: M/N is currently unsupported</source>
-        <translation>Erreur : M/N n&apos;est actuellement pas supporté</translation>
+        <translation>Erreur : M/N n&apos;est actuellement pas supporté</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="4455"/>
@@ -3094,7 +3094,7 @@ Sinon, vous prouvez le plus petit solde supérieur à &lt;montant&gt; dans votre
 To start synchronizing with the daemon, use the &quot;refresh&quot; command.
 Use the &quot;help&quot; command to see the list of available commands.
 Use &quot;help &lt;command&gt;&quot; to see a command&apos;s documentation.
-Always use the &quot;exit&quot; command when closing phiblock-wallet-cli to save 
+Always use the &quot;exit&quot; command when closing monero-wallet-cli to save 
 your current session&apos;s state. Otherwise, you might need to synchronize 
 your wallet again (your wallet keys are NOT at risk in any case).
 </source>
@@ -3102,7 +3102,7 @@ your wallet again (your wallet keys are NOT at risk in any case).
 Pour commencer la synchronisation avec le démon, utilisez la commande &quot;refresh&quot;.
 Utilisez la commande &quot;help&quot; pour voir la liste des commandes disponibles.
 Utilisez &quot;help &lt;commande&gt;&quot; pour voir la documentation d&apos;une commande.
-Utilisez toujours la commande &quot;exit&quot; pour fermer phiblock-wallet-cli pour sauvegarder 
+Utilisez toujours la commande &quot;exit&quot; pour fermer monero-wallet-cli pour sauvegarder 
 l&apos;état de votre session. Sinon, vous pourriez avoir besoin de synchroniser 
 votre portefeuille à nouveau (mais les clés de votre portefeuille ne risquent rien).
 </translation>
@@ -3115,7 +3115,7 @@ votre portefeuille à nouveau (mais les clés de votre portefeuille ne risquent 
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="4888"/>
         <source>Generated new %u/%u multisig wallet: </source>
-        <translation>Nouveau portefeuille multisig %u/%u généré : </translation>
+        <translation>Nouveau portefeuille multisig %u/%u généré : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="4937"/>
@@ -3169,7 +3169,7 @@ votre portefeuille à nouveau (mais les clés de votre portefeuille ne risquent 
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="5181"/>
-        <source>Enabling this supports the network you are using, and makes you eligible for receiving new phiblock</source>
+        <source>Enabling this supports the network you are using, and makes you eligible for receiving new monero</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3223,7 +3223,7 @@ votre portefeuille à nouveau (mais les clés de votre portefeuille ne risquent 
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="5691"/>
         <source>Currently selected account: [</source>
-        <translation>Compte actuellement sélectionné : [</translation>
+        <translation>Compte actuellement sélectionné : [</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="5691"/>
@@ -3233,7 +3233,7 @@ votre portefeuille à nouveau (mais les clés de votre portefeuille ne risquent 
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="5693"/>
         <source>Tag: </source>
-        <translation>Mot clé : </translation>
+        <translation>Mot clé : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="5693"/>
@@ -3243,7 +3243,7 @@ votre portefeuille à nouveau (mais les clés de votre portefeuille ne risquent 
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="5705"/>
         <source>Balance per address:</source>
-        <translation>Solde par adresse :</translation>
+        <translation>Solde par adresse :</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="5706"/>
@@ -3356,19 +3356,19 @@ votre portefeuille à nouveau (mais les clés de votre portefeuille ne risquent 
         <location filename="../src/simplewallet/simplewallet.cpp" line="6426"/>
         <location filename="../src/simplewallet/simplewallet.cpp" line="6891"/>
         <source>failed to get blockchain height: </source>
-        <translation>échec de la récupération de la hauteur de la chaîne de blocs : </translation>
+        <translation>échec de la récupération de la hauteur de la chaîne de blocs : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="6032"/>
         <source>
 Transaction %llu/%llu: txid=%s</source>
         <translation>
-Transaction %llu/%llu : ID=%s</translation>
+Transaction %llu/%llu : ID=%s</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="6070"/>
         <source>failed to get output: </source>
-        <translation>échec de la récupération de la sortie : </translation>
+        <translation>échec de la récupération de la sortie : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="6078"/>
@@ -3380,7 +3380,7 @@ Transaction %llu/%llu : ID=%s</translation>
         <source>
 Originating block heights: </source>
         <translation>
-Hauteurs des blocs d&apos;origine : </translation>
+Hauteurs des blocs d&apos;origine : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="6094"/>
@@ -3402,7 +3402,7 @@ Hauteurs des blocs d&apos;origine : </translation>
         <source>
 Warning: Some input keys being spent are from </source>
         <translation>
-Attention : Certaines clés d&apos;entrées étant dépensées sont issues de </translation>
+Attention : Certaines clés d&apos;entrées étant dépensées sont issues de </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="6113"/>
@@ -3580,7 +3580,7 @@ Cette transaction (%s de monnaie rendue inclue) sera déverrouillée au bloc %ll
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="9777"/>
         <source>Failed to import key images: </source>
-        <translation>Échec de l&apos;import des images de clé : </translation>
+        <translation>Échec de l&apos;import des images de clé : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="9794"/>
@@ -3616,7 +3616,7 @@ Cette transaction (%s de monnaie rendue inclue) sera déverrouillée au bloc %ll
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="10006"/>
         <source>Double spend seen on the network: this transaction may or may not end up being mined</source>
-        <translation>Double dépense détectée sur le réseau : cette transaction sera peut-être invalidée</translation>
+        <translation>Double dépense détectée sur le réseau : cette transaction sera peut-être invalidée</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="10041"/>
@@ -3886,12 +3886,12 @@ Cette transaction (%s de monnaie rendue inclue) sera déverrouillée au bloc %ll
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="3108"/>
         <source>Transfer &lt;amount&gt; to &lt;address&gt;. If the parameter &quot;index=&lt;N1&gt;[,&lt;N2&gt;,...]&quot; is specified, the wallet uses outputs received by addresses of those indices. If omitted, the wallet randomly chooses address indices to be used. In any case, it tries its best not to combine outputs across multiple addresses. &lt;priority&gt; is the priority of the transaction. The higher the priority, the higher the transaction fee. Valid values in priority order (from lowest to highest) are: unimportant, normal, elevated, priority. If omitted, the default value (see the command &quot;set priority&quot;) is used. &lt;ring_size&gt; is the number of inputs to include for untraceability. Multiple payments can be made at once by adding URI_2 or &lt;address_2&gt; &lt;amount_2&gt; etcetera (before the payment ID, if it&apos;s included)</source>
-        <translation>Transférer &lt;montant&gt; à &lt;adresse&gt; Si le paramètre &quot;index=&lt;N1&gt;[,&lt;N2&gt;,...]&quot; est spécifié, le portefeuille utilise les sorties reçues par les adresses de ces indices. Si il est omis, le portefeuille choisit les indices d&apos;adresse à utiliser aléatoirement. Dans tous les cas, il essaye de ne pas combiner des sorties de multiples adresses. &lt;priorité&gt; est la priorité de la transaction. Plus la priorité est haute, plus les frais de transaction sont élevés. Les valeurs valides par ordre de priorité (de la plus basse à la plus haute) sont : unimportant, normal, elevated, priority. Si elle est omise, la valeur par défaut (voir la commande &quot;set priority&quot;) est utilisée. &lt;taille_cercle&gt; est le nombre d&apos;entrées à inclure pour l&apos;intraçabilité. De multiples paiements peuvent être réalisés d&apos;un coup en ajoutant &lt;URI_2&gt; ou &lt;adresse_2&gt; &lt;montant_2&gt; et cetera (avant l&apos;ID de paiement, si il est inclus)</translation>
+        <translation>Transférer &lt;montant&gt; à &lt;adresse&gt; Si le paramètre &quot;index=&lt;N1&gt;[,&lt;N2&gt;,...]&quot; est spécifié, le portefeuille utilise les sorties reçues par les adresses de ces indices. Si il est omis, le portefeuille choisit les indices d&apos;adresse à utiliser aléatoirement. Dans tous les cas, il essaye de ne pas combiner des sorties de multiples adresses. &lt;priorité&gt; est la priorité de la transaction. Plus la priorité est haute, plus les frais de transaction sont élevés. Les valeurs valides par ordre de priorité (de la plus basse à la plus haute) sont : unimportant, normal, elevated, priority. Si elle est omise, la valeur par défaut (voir la commande &quot;set priority&quot;) est utilisée. &lt;taille_cercle&gt; est le nombre d&apos;entrées à inclure pour l&apos;intraçabilité. De multiples paiements peuvent être réalisés d&apos;un coup en ajoutant &lt;URI_2&gt; ou &lt;adresse_2&gt; &lt;montant_2&gt; et cetera (avant l&apos;ID de paiement, si il est inclus)</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="3112"/>
         <source>Transfer &lt;amount&gt; to &lt;address&gt; and lock it for &lt;lockblocks&gt; (max. 1000000). If the parameter &quot;index=&lt;N1&gt;[,&lt;N2&gt;,...]&quot; is specified, the wallet uses outputs received by addresses of those indices. If omitted, the wallet randomly chooses address indices to be used. In any case, it tries its best not to combine outputs across multiple addresses. &lt;priority&gt; is the priority of the transaction. The higher the priority, the higher the transaction fee. Valid values in priority order (from lowest to highest) are: unimportant, normal, elevated, priority. If omitted, the default value (see the command &quot;set priority&quot;) is used. &lt;ring_size&gt; is the number of inputs to include for untraceability. Multiple payments can be made at once by adding URI_2 or &lt;address_2&gt; &lt;amount_2&gt; etcetera (before the payment ID, if it&apos;s included)</source>
-        <translation>Transférer &lt;montant&gt; à &lt;adresse&gt; et le verrouiller pendant &lt;blocs_verrou&gt; (max 1000000). Si le paramètre &quot;index=&lt;N1&gt;[,&lt;N2&gt;,...]&quot; est spécifié, le portefeuille utilise les sorties reçues par les adresses de ces indices. Si il est omis, le portefeuille choisit les indices d&apos;adresse à utiliser aléatoirement. Dans tous les cas, il essaye de ne pas combiner des sorties de multiples adresses. &lt;priorité&gt; est la priorité de la transaction. Plus la priorité est haute, plus les frais de transaction sont élevés. Les valeurs valides par ordre de priorité (de la plus basse à la plus haute) sont : unimportant, normal, elevated, priority. Si elle est omise, la valeur par défaut (voir la commande &quot;set priority&quot;) est utilisée. &lt;taille_cercle&gt; est le nombre d&apos;entrées à inclure pour l&apos;intraçabilité. De multiples paiements peuvent être réalisés d&apos;un coup en ajoutant &lt;URI_2&gt; ou &lt;adresse_2&gt; &lt;montant_2&gt; et cetera (avant l&apos;ID de paiement, si il est inclus)</translation>
+        <translation>Transférer &lt;montant&gt; à &lt;adresse&gt; et le verrouiller pendant &lt;blocs_verrou&gt; (max 1000000). Si le paramètre &quot;index=&lt;N1&gt;[,&lt;N2&gt;,...]&quot; est spécifié, le portefeuille utilise les sorties reçues par les adresses de ces indices. Si il est omis, le portefeuille choisit les indices d&apos;adresse à utiliser aléatoirement. Dans tous les cas, il essaye de ne pas combiner des sorties de multiples adresses. &lt;priorité&gt; est la priorité de la transaction. Plus la priorité est haute, plus les frais de transaction sont élevés. Les valeurs valides par ordre de priorité (de la plus basse à la plus haute) sont : unimportant, normal, elevated, priority. Si elle est omise, la valeur par défaut (voir la commande &quot;set priority&quot;) est utilisée. &lt;taille_cercle&gt; est le nombre d&apos;entrées à inclure pour l&apos;intraçabilité. De multiples paiements peuvent être réalisés d&apos;un coup en ajoutant &lt;URI_2&gt; ou &lt;adresse_2&gt; &lt;montant_2&gt; et cetera (avant l&apos;ID de paiement, si il est inclus)</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="3116"/>
@@ -3976,8 +3976,8 @@ Image de clé, &quot;absolue&quot;, liste de cercles</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="3694"/>
-        <source>phiblock, millinero, micronero, nanonero, piconero</source>
-        <translation>phiblock, millinero, micronero, nanonero, piconero</translation>
+        <source>monero, millinero, micronero, nanonero, piconero</source>
+        <translation>monero, millinero, micronero, nanonero, piconero</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="3705"/>
@@ -4012,7 +4012,7 @@ Image de clé, &quot;absolue&quot;, liste de cercles</translation>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="3806"/>
         <source>Key file not found. Failed to open wallet: </source>
-        <translation>Fichier de clés non trouvé. Échec de l&apos;ouverture du portefeuille : </translation>
+        <translation>Fichier de clés non trouvé. Échec de l&apos;ouverture du portefeuille : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="3825"/>
@@ -4202,7 +4202,7 @@ Image de clé, &quot;absolue&quot;, liste de cercles</translation>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="4718"/>
         <source>View key: </source>
-        <translation>Clé d&apos;audit : </translation>
+        <translation>Clé d&apos;audit : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="4833"/>
@@ -4232,7 +4232,7 @@ Image de clé, &quot;absolue&quot;, liste de cercles</translation>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="5077"/>
         <source>Failed to save watch only wallet: </source>
-        <translation>Échec de la sauvegarde du portefeuille d&apos;audit : </translation>
+        <translation>Échec de la sauvegarde du portefeuille d&apos;audit : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="5180"/>
@@ -4294,7 +4294,7 @@ Image de clé, &quot;absolue&quot;, liste de cercles</translation>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="5411"/>
         <source>blockchain can&apos;t be saved: </source>
-        <translation>la chaîne de blocs ne peut pas être sauvegardée : </translation>
+        <translation>la chaîne de blocs ne peut pas être sauvegardée : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="5497"/>
@@ -4322,7 +4322,7 @@ Image de clé, &quot;absolue&quot;, liste de cercles</translation>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="5639"/>
         <source>refresh error: </source>
-        <translation>erreur du rafraîchissement : </translation>
+        <translation>erreur du rafraîchissement : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="5690"/>
@@ -4332,7 +4332,7 @@ Image de clé, &quot;absolue&quot;, liste de cercles</translation>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="5699"/>
         <source>Balance: </source>
-        <translation>Solde : </translation>
+        <translation>Solde : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="5806"/>
@@ -4384,7 +4384,7 @@ Image de clé, &quot;absolue&quot;, liste de cercles</translation>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="5903"/>
         <source>payment ID has invalid format, expected 16 or 64 character hex string: </source>
-        <translation>format d&apos;identifiant de paiement invalide, 16 ou 64 caractères hexadécimaux attendus : </translation>
+        <translation>format d&apos;identifiant de paiement invalide, 16 ou 64 caractères hexadécimaux attendus : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="5964"/>
@@ -4542,7 +4542,7 @@ Entrée %llu/%llu (%s): montant=%s</translation>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="9361"/>
         <source>Standard address: </source>
-        <translation>Adresse standard : </translation>
+        <translation>Adresse standard : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="9366"/>
@@ -4562,19 +4562,19 @@ Entrée %llu/%llu (%s): montant=%s</translation>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="9417"/>
         <source>Index: </source>
-        <translation>Index : </translation>
+        <translation>Index : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="9423"/>
         <location filename="../src/simplewallet/simplewallet.cpp" line="9553"/>
         <source>Address: </source>
-        <translation>Adresse : </translation>
+        <translation>Adresse : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="9424"/>
         <location filename="../src/simplewallet/simplewallet.cpp" line="9552"/>
         <source>Description: </source>
-        <translation>Description : </translation>
+        <translation>Description : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="9562"/>
@@ -4651,12 +4651,12 @@ Entrée %llu/%llu (%s): montant=%s</translation>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="8135"/>
         <source>Good signature -- total: %s, spent: %s, unspent: %s</source>
-        <translation>Bonne signature -- total : %s, dépensé : %s, non dépensé : %s</translation>
+        <translation>Bonne signature -- total : %s, dépensé : %s, non dépensé : %s</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="8350"/>
         <source>[Double spend seen on the network: this transaction may or may not end up being mined] </source>
-        <translation>[Double dépense détectée sur le réseau : cette transaction sera peut-être invalidée] </translation>
+        <translation>[Double dépense détectée sur le réseau : cette transaction sera peut-être invalidée] </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="8628"/>
@@ -4702,7 +4702,7 @@ Entrée %llu/%llu (%s): montant=%s</translation>
         <location filename="../src/simplewallet/simplewallet.cpp" line="9251"/>
         <location filename="../src/simplewallet/simplewallet.cpp" line="9279"/>
         <source>failed to parse index: </source>
-        <translation>échec de l&apos;analyse de l&apos;index : </translation>
+        <translation>échec de l&apos;analyse de l&apos;index : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="9019"/>
@@ -4716,18 +4716,18 @@ Entrée %llu/%llu (%s): montant=%s</translation>
 Grand total:
   Balance: </source>
         <translation>
-Somme finale :
-  Solde : </translation>
+Somme finale :
+  Solde : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="9137"/>
         <source>, unlocked balance: </source>
-        <translation>, solde débloqué : </translation>
+        <translation>, solde débloqué : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="9145"/>
         <source>Untagged accounts:</source>
-        <translation>Comptes sans mot clé :</translation>
+        <translation>Comptes sans mot clé :</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="9151"/>
@@ -4737,12 +4737,12 @@ Somme finale :
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="9154"/>
         <source>Accounts with tag: </source>
-        <translation>Comptes avec mot clé : </translation>
+        <translation>Comptes avec mot clé : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="9155"/>
         <source>Tag&apos;s description: </source>
-        <translation>Description du mot clé : </translation>
+        <translation>Description du mot clé : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="9157"/>
@@ -4798,12 +4798,12 @@ Somme finale :
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="9355"/>
         <source>Integrated address: %s, payment ID: %s</source>
-        <translation>Adresse intégrée : %s, ID de paiement : %s</translation>
+        <translation>Adresse intégrée : %s, ID de paiement : %s</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="9361"/>
         <source>Subaddress: </source>
-        <translation>Sous-adresse : </translation>
+        <translation>Sous-adresse : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="9509"/>
@@ -4813,12 +4813,12 @@ Somme finale :
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="9511"/>
         <source>description found: </source>
-        <translation>description trouvée : </translation>
+        <translation>description trouvée : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="9551"/>
         <source>Filename: </source>
-        <translation>Fichier : </translation>
+        <translation>Fichier : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="9556"/>
@@ -4839,7 +4839,7 @@ Somme finale :
         <location filename="../src/simplewallet/simplewallet.cpp" line="9561"/>
         <location filename="../src/simplewallet/simplewallet.cpp" line="10377"/>
         <source>Type: </source>
-        <translation>Type : </translation>
+        <translation>Type : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="9587"/>
@@ -4885,7 +4885,7 @@ Somme finale :
         <location filename="../src/simplewallet/simplewallet.cpp" line="8587"/>
         <location filename="../src/simplewallet/simplewallet.cpp" line="8595"/>
         <source>amount is wrong: </source>
-        <translation>montant erroné : </translation>
+        <translation>montant erroné : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="6352"/>
@@ -4901,7 +4901,7 @@ Somme finale :
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="7294"/>
         <source>Money successfully sent, transaction: </source>
-        <translation>Fonds envoyés avec succès, transaction : </translation>
+        <translation>Fonds envoyés avec succès, transaction : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="7491"/>
@@ -4942,7 +4942,7 @@ Somme finale :
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="7690"/>
         <source>Tx key: </source>
-        <translation>Clé de transaction : </translation>
+        <translation>Clé de transaction : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="7695"/>
@@ -4954,7 +4954,7 @@ Somme finale :
         <location filename="../src/simplewallet/simplewallet.cpp" line="7999"/>
         <location filename="../src/simplewallet/simplewallet.cpp" line="8088"/>
         <source>signature file saved to: </source>
-        <translation>fichier signature sauvegardé dans : </translation>
+        <translation>fichier signature sauvegardé dans : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="7789"/>
@@ -4974,7 +4974,7 @@ Somme finale :
         <location filename="../src/simplewallet/simplewallet.cpp" line="7881"/>
         <location filename="../src/simplewallet/simplewallet.cpp" line="7959"/>
         <source>error: </source>
-        <translation>erreur : </translation>
+        <translation>erreur : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="7857"/>
@@ -4998,7 +4998,7 @@ Somme finale :
         <location filename="../src/simplewallet/simplewallet.cpp" line="7860"/>
         <location filename="../src/simplewallet/simplewallet.cpp" line="7933"/>
         <source>WARNING: this transaction is not yet included in the blockchain!</source>
-        <translation>ATTENTION : cette transaction n&apos;est pas encore inclue dans la chaîne de blocs !</translation>
+        <translation>ATTENTION : cette transaction n&apos;est pas encore inclue dans la chaîne de blocs !</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="7866"/>
@@ -5010,17 +5010,17 @@ Somme finale :
         <location filename="../src/simplewallet/simplewallet.cpp" line="7870"/>
         <location filename="../src/simplewallet/simplewallet.cpp" line="7943"/>
         <source>WARNING: failed to determine number of confirmations!</source>
-        <translation>ATTENTION : échec de la détermination du nombre de confirmations !</translation>
+        <translation>ATTENTION : échec de la détermination du nombre de confirmations !</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="8224"/>
         <source>bad min_height parameter:</source>
-        <translation>mauvais paramètre hauteur_minimum :</translation>
+        <translation>mauvais paramètre hauteur_minimum :</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="8236"/>
         <source>bad max_height parameter:</source>
-        <translation>mauvais paramètre hauteur_maximum :</translation>
+        <translation>mauvais paramètre hauteur_maximum :</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="8256"/>
@@ -5037,12 +5037,12 @@ Somme finale :
         <source>
 Amount: </source>
         <translation>
-Montant : </translation>
+Montant : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="8634"/>
         <source>, number of keys: </source>
-        <translation>, nombre de clés : </translation>
+        <translation>, nombre de clés : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="8639"/>
@@ -5054,49 +5054,49 @@ Montant : </translation>
         <source>
 Min block height: </source>
         <translation>
-Hauteur de bloc minimum : </translation>
+Hauteur de bloc minimum : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="8645"/>
         <source>
 Max block height: </source>
         <translation>
-Hauteur de bloc maximum : </translation>
+Hauteur de bloc maximum : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="8646"/>
         <source>
 Min amount found: </source>
         <translation>
-Montant minimum trouvé : </translation>
+Montant minimum trouvé : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="8647"/>
         <source>
 Max amount found: </source>
         <translation>
-Montant maximum trouvé : </translation>
+Montant maximum trouvé : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="8648"/>
         <source>
 Total count: </source>
         <translation>
-Compte total : </translation>
+Compte total : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="8688"/>
         <source>
 Bin size: </source>
         <translation>
-Taille de classe : </translation>
+Taille de classe : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="8689"/>
         <source>
 Outputs per *: </source>
         <translation>
-Sorties par * : </translation>
+Sorties par * : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="8691"/>
@@ -5149,12 +5149,12 @@ Sorties par * : </translation>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="9333"/>
         <source>Random payment ID: </source>
-        <translation>ID de paiement aléatoire : </translation>
+        <translation>ID de paiement aléatoire : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="9334"/>
         <source>Matching integrated address: </source>
-        <translation>Adresse intégrée correspondante : </translation>
+        <translation>Adresse intégrée correspondante : </translation>
     </message>
 </context>
 <context>
@@ -5283,7 +5283,7 @@ Sorties par * : </translation>
     <message>
         <location filename="../src/gen_multisig/gen_multisig.cpp" line="157"/>
         <source>Error creating multisig wallets: </source>
-        <translation>Erreur de création des portefeuilles multisig : </translation>
+        <translation>Erreur de création des portefeuilles multisig : </translation>
     </message>
     <message>
         <location filename="../src/gen_multisig/gen_multisig.cpp" line="182"/>
@@ -5298,23 +5298,23 @@ Sorties par * : </translation>
     <message>
         <location filename="../src/gen_multisig/gen_multisig.cpp" line="208"/>
         <source>Error: expected N/M, but got: </source>
-        <translation>Erreur : N/M attendu, mais lu : </translation>
+        <translation>Erreur : N/M attendu, mais lu : </translation>
     </message>
     <message>
         <location filename="../src/gen_multisig/gen_multisig.cpp" line="216"/>
         <location filename="../src/gen_multisig/gen_multisig.cpp" line="225"/>
         <source>Error: either --scheme or both of --threshold and --participants may be given</source>
-        <translation>Erreur : soit --scheme soit --threshold et --participants doivent être indiqués</translation>
+        <translation>Erreur : soit --scheme soit --threshold et --participants doivent être indiqués</translation>
     </message>
     <message>
         <location filename="../src/gen_multisig/gen_multisig.cpp" line="232"/>
         <source>Error: expected N &gt; 1 and N &lt;= M, but got N==%u and M==%d</source>
-        <translation>Erreur : N &gt; 1 et N &lt;= M attendu, mais lu N==%u et M==%d</translation>
+        <translation>Erreur : N &gt; 1 et N &lt;= M attendu, mais lu N==%u et M==%d</translation>
     </message>
     <message>
         <location filename="../src/gen_multisig/gen_multisig.cpp" line="241"/>
         <source>Error: --filename-base is required</source>
-        <translation>Erreur : --filename-base est requis</translation>
+        <translation>Erreur : --filename-base est requis</translation>
     </message>
 </context>
 <context>
@@ -5569,7 +5569,7 @@ Utilisez &quot;mms note&quot; pour afficher les notes en attente</translation>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="496"/>
         <source>failed to parse index: </source>
-        <translation>échec de l&apos;analyse de l&apos;index : </translation>
+        <translation>échec de l&apos;analyse de l&apos;index : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="509"/>
@@ -5584,12 +5584,12 @@ Utilisez &quot;mms note&quot; pour afficher les notes en attente</translation>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="537"/>
         <source>RPC error: </source>
-        <translation>Erreur RPC : </translation>
+        <translation>Erreur RPC : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="541"/>
         <source>failed to get random outputs to mix: </source>
-        <translation>échec de la récupération de sorties aléatoires à mélanger : </translation>
+        <translation>échec de la récupération de sorties aléatoires à mélanger : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="548"/>
@@ -5645,22 +5645,22 @@ Utilisez &quot;mms note&quot; pour afficher les notes en attente</translation>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="609"/>
         <source>unknown transfer error: </source>
-        <translation>erreur de transfert inconnue : </translation>
+        <translation>erreur de transfert inconnue : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="614"/>
         <source>Multisig error: </source>
-        <translation>Erreur multisig : </translation>
+        <translation>Erreur multisig : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="620"/>
         <source>internal error: </source>
-        <translation>erreur interne : </translation>
+        <translation>erreur interne : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="625"/>
         <source>unexpected error: </source>
-        <translation>erreur inattendue : </translation>
+        <translation>erreur inattendue : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="629"/>
@@ -5704,17 +5704,17 @@ Utilisez &quot;mms note&quot; pour afficher les notes en attente</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="10137"/>
-        <source>This is the command line phiblock wallet. It needs to connect to a phiblock
+        <source>This is the command line monero wallet. It needs to connect to a monero
 daemon to work correctly.
-WARNING: Do not reuse your Phiblock keys on another fork, UNLESS this fork has key reuse mitigations built in. Doing so will harm your privacy.</source>
-        <translation>Ceci est le portefeuille phiblock en ligne de commande.
-Il a besoin de se connecter à un démon phiblock pour fonctionner correctement.
+WARNING: Do not reuse your Monero keys on another fork, UNLESS this fork has key reuse mitigations built in. Doing so will harm your privacy.</source>
+        <translation>Ceci est le portefeuille monero en ligne de commande.
+Il a besoin de se connecter à un démon monero pour fonctionner correctement.
 ATTENTION : Ne réutilisez pas vos clés Monero avec un autre fork, À MOINS QUE ce fork inclue des mitigations contre la réutilisation des clés. Faire ceci nuira à votre confidentialité.</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="10162"/>
         <source>Unknown command: </source>
-        <translation>Commande inconnue : </translation>
+        <translation>Commande inconnue : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="165"/>
@@ -5728,8 +5728,8 @@ ATTENTION : Ne réutilisez pas vos clés Monero avec un autre fork, À MOINS QUE
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="168"/>
-        <source>The newly created transaction will not be relayed to the phiblock network</source>
-        <translation>La transaction nouvellement créée ne sera pas transmise au réseau phiblock</translation>
+        <source>The newly created transaction will not be relayed to the monero network</source>
+        <translation>La transaction nouvellement créée ne sera pas transmise au réseau monero</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="169"/>
@@ -5769,7 +5769,7 @@ ATTENTION : Ne réutilisez pas vos clés Monero avec un autre fork, À MOINS QUE
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="356"/>
         <source>Error: </source>
-        <translation>Erreur : </translation>
+        <translation>Erreur : </translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="465"/>
@@ -6046,7 +6046,7 @@ ATTENTION : Ne réutilisez pas vos clés Monero avec un autre fork, À MOINS QUE
     <message>
         <location filename="../src/wallet/wallet2.cpp" line="720"/>
         <source>failed to parse address: </source>
-        <translation>échec de l&apos;analyse de l&apos;adresse : </translation>
+        <translation>échec de l&apos;analyse de l&apos;adresse : </translation>
     </message>
     <message>
         <location filename="../src/wallet/wallet2.cpp" line="726"/>
@@ -6056,16 +6056,16 @@ ATTENTION : Ne réutilisez pas vos clés Monero avec un autre fork, À MOINS QUE
     <message>
         <location filename="../src/wallet/wallet2.cpp" line="743"/>
         <source>failed to generate new wallet: </source>
-        <translation>échec de la génération du nouveau portefeuille : </translation>
+        <translation>échec de la génération du nouveau portefeuille : </translation>
     </message>
     <message>
         <location filename="../src/wallet/wallet2.cpp" line="1762"/>
-        <source>Password is needed to compute key image for incoming phiblock</source>
+        <source>Password is needed to compute key image for incoming monero</source>
         <translation>Le mot de passe est requis pour calculer l&apos;image de clé pour les moneros entrants</translation>
     </message>
     <message>
         <location filename="../src/wallet/wallet2.cpp" line="1763"/>
-        <source>Invalid password: password is needed to compute key image for incoming phiblock</source>
+        <source>Invalid password: password is needed to compute key image for incoming monero</source>
         <translation>Mot de passe invalide : le mot de passe est requis pour calculer l&apos;image de clé pour les moneros entrants</translation>
     </message>
     <message>
@@ -6116,7 +6116,7 @@ ATTENTION : Ne réutilisez pas vos clés Monero avec un autre fork, À MOINS QUE
     <message>
         <location filename="../src/wallet/wallet_rpc_server.cpp" line="190"/>
         <source>Failed to create directory %s: %s</source>
-        <translation>Échec de la création du répertoire %s : %s</translation>
+        <translation>Échec de la création du répertoire %s : %s</translation>
     </message>
     <message>
         <location filename="../src/wallet/wallet_rpc_server.cpp" line="201"/>
@@ -6156,14 +6156,14 @@ ATTENTION : Ne réutilisez pas vos clés Monero avec un autre fork, À MOINS QUE
     <message>
         <location filename="../src/wallet/wallet_rpc_server.cpp" line="3291"/>
         <source>Transaction not possible. Available only %s, transaction amount %s = %s + %s (fee)</source>
-        <translation>Transaction impossible. Solde disponible : %s, montant de la transaction %s = %s + %s (frais)</translation>
+        <translation>Transaction impossible. Solde disponible : %s, montant de la transaction %s = %s + %s (frais)</translation>
     </message>
     <message>
         <location filename="../src/wallet/wallet_rpc_server.cpp" line="4492"/>
-        <source>This is the RPC phiblock wallet. It needs to connect to a phiblock
+        <source>This is the RPC monero wallet. It needs to connect to a monero
 daemon to work correctly.</source>
-        <translation>Ceci est le portefeuille phiblock par RPC. Il a besoin de se
-connecter à un démon phiblock pour fonctionner correctement.</translation>
+        <translation>Ceci est le portefeuille monero par RPC. Il a besoin de se
+connecter à un démon monero pour fonctionner correctement.</translation>
     </message>
     <message>
         <location filename="../src/wallet/wallet_rpc_server.cpp" line="4320"/>
@@ -6205,7 +6205,7 @@ connecter à un démon phiblock pour fonctionner correctement.</translation>
     <message>
         <location filename="../src/wallet/wallet_rpc_server.cpp" line="4390"/>
         <source>Wallet initialization failed: </source>
-        <translation>Échec de l&apos;initialisation du portefeuille : </translation>
+        <translation>Échec de l&apos;initialisation du portefeuille : </translation>
     </message>
     <message>
         <location filename="../src/wallet/wallet_rpc_server.cpp" line="4396"/>
@@ -6220,7 +6220,7 @@ connecter à un démon phiblock pour fonctionner correctement.</translation>
     <message>
         <location filename="../src/wallet/wallet_rpc_server.cpp" line="4407"/>
         <source>Failed to run wallet: </source>
-        <translation>Échec du lancement du portefeuille : </translation>
+        <translation>Échec du lancement du portefeuille : </translation>
     </message>
     <message>
         <location filename="../src/wallet/wallet_rpc_server.cpp" line="4410"/>
@@ -6230,7 +6230,7 @@ connecter à un démon phiblock pour fonctionner correctement.</translation>
     <message>
         <location filename="../src/wallet/wallet_rpc_server.cpp" line="4419"/>
         <source>Failed to save wallet: </source>
-        <translation>Échec de la sauvegarde du portefeuille : </translation>
+        <translation>Échec de la sauvegarde du portefeuille : </translation>
     </message>
 </context>
 <context>
@@ -6279,10 +6279,10 @@ connecter à un démon phiblock pour fonctionner correctement.</translation>
     </message>
     <message>
         <location filename="../src/wallet/wallet_args.cpp" line="148"/>
-        <source>This is the command line phiblock wallet. It needs to connect to a phiblock
+        <source>This is the command line monero wallet. It needs to connect to a monero
 daemon to work correctly.</source>
-        <translation>Ceci est le portefeuille phiblock en ligne de commande. Il a besoin de se
-connecter à un démon phiblock pour fonctionner correctement.</translation>
+        <translation>Ceci est le portefeuille monero en ligne de commande. Il a besoin de se
+connecter à un démon monero pour fonctionner correctement.</translation>
     </message>
     <message>
         <location filename="../src/wallet/wallet_args.cpp" line="173"/>
@@ -6292,7 +6292,7 @@ connecter à un démon phiblock pour fonctionner correctement.</translation>
     <message>
         <location filename="../src/wallet/wallet_args.cpp" line="217"/>
         <source>Logging to: </source>
-        <translation>Journalisation dans : </translation>
+        <translation>Journalisation dans : </translation>
     </message>
     <message>
         <location filename="../src/wallet/wallet_args.cpp" line="219"/>
@@ -6312,7 +6312,7 @@ connecter à un démon phiblock pour fonctionner correctement.</translation>
     <message>
         <location filename="../src/wallet/wallet_args.cpp" line="150"/>
         <source>Usage:</source>
-        <translation>Usage :</translation>
+        <translation>Usage :</translation>
     </message>
 </context>
 </TS>

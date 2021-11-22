@@ -35,7 +35,7 @@ case $1 in
         cat <<'EOM'
 graph_title difficulty
 graph_vlabel difficulty
-graph_category phiblock
+graph_category monero
 difficulty.label difficulty
 EOM
         exit 0;;

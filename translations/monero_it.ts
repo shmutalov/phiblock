@@ -2005,7 +2005,7 @@ Otherwise, you prove the reserve of the smallest possible amount above &lt;amoun
 To start synchronizing with the daemon, use the &quot;refresh&quot; command.
 Use the &quot;help&quot; command to see the list of available commands.
 Use &quot;help &lt;command&gt;&quot; to see a command&apos;s documentation.
-Always use the &quot;exit&quot; command when closing phiblock-wallet-cli to save 
+Always use the &quot;exit&quot; command when closing monero-wallet-cli to save 
 your current session&apos;s state. Otherwise, you might need to synchronize 
 your wallet again (your wallet keys are NOT at risk in any case).
 </source>
@@ -2013,7 +2013,7 @@ your wallet again (your wallet keys are NOT at risk in any case).
 Per avviare la sincronizzazione con il daemon, utilizzare il comando &quot;refresh&quot;.
 Utilizzare il comando &quot;help&quot; per visualizzare l&apos;elenco dei comandi disponibili.
 Usa &quot;help &lt;command&gt;&quot; per vedere la documentazione di un comando.
-Usa sempre il comando &quot;exit&quot; quando chiudi phiblock-wallet-cli per salvare lo 
+Usa sempre il comando &quot;exit&quot; quando chiudi monero-wallet-cli per salvare lo 
 stato della sessione corrente. In caso contrario, potrebbe essere necessario sincronizzare 
 di nuovo il tuo portafoglio (le chiavi del tuo portafoglio NON sono in nessun caso a rischio).
 </translation>
@@ -2080,7 +2080,7 @@ di nuovo il tuo portafoglio (le chiavi del tuo portafoglio NON sono in nessun ca
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="5181"/>
-        <source>Enabling this supports the network you are using, and makes you eligible for receiving new phiblock</source>
+        <source>Enabling this supports the network you are using, and makes you eligible for receiving new monero</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3112,8 +3112,8 @@ This transaction (including %s change) will unlock on block %llu, in approximate
  ask-password &lt;0|1|2   (or never|action|decrypt)&gt;
    action: ask the password before many actions such as transfer, etc
    decrypt: same as action, but keeps the spend key encrypted in memory when not needed
- unit &lt;phiblock|millinero|micronero|nanonero|piconero&gt;
-   Set the default phiblock (sub-)unit.
+ unit &lt;monero|millinero|micronero|nanonero|piconero&gt;
+   Set the default monero (sub-)unit.
  min-outputs-count [n]
    Try to keep at least that many outputs of value at least min-outputs-value.
  min-outputs-value [n]
@@ -3147,7 +3147,7 @@ This transaction (including %s change) will unlock on block %llu, in approximate
  track-uses &lt;1|0&gt;
    Whether to keep track of owned outputs uses.
  setup-background-mining &lt;1|0&gt;
-   Whether to enable background mining. Set this to support the network and to get a chance to receive new phiblock.
+   Whether to enable background mining. Set this to support the network and to get a chance to receive new monero.
  device-name &lt;device_name[:device_spec]&gt;
    Device name for hardware wallet.
  export-format &lt;&quot;binary&quot;|&quot;ascii&quot;&gt;
@@ -3398,8 +3398,8 @@ Key Image, &quot;absolute&quot;, list of rings</source>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="3694"/>
-        <source>phiblock, millinero, micronero, nanonero, piconero</source>
-        <translation>phiblock, millinero, micronero, nanonero, piconero</translation>
+        <source>monero, millinero, micronero, nanonero, piconero</source>
+        <translation>monero, millinero, micronero, nanonero, piconero</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="3705"/>
@@ -5679,9 +5679,9 @@ Use &quot;mms note&quot; to display the waiting notes</source>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="10137"/>
-        <source>This is the command line phiblock wallet. It needs to connect to a phiblock
+        <source>This is the command line monero wallet. It needs to connect to a monero
 daemon to work correctly.
-WARNING: Do not reuse your Phiblock keys on another fork, UNLESS this fork has key reuse mitigations built in. Doing so will harm your privacy.</source>
+WARNING: Do not reuse your Monero keys on another fork, UNLESS this fork has key reuse mitigations built in. Doing so will harm your privacy.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5701,7 +5701,7 @@ WARNING: Do not reuse your Phiblock keys on another fork, UNLESS this fork has k
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="168"/>
-        <source>The newly created transaction will not be relayed to the phiblock network</source>
+        <source>The newly created transaction will not be relayed to the monero network</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6033,12 +6033,12 @@ WARNING: Do not reuse your Phiblock keys on another fork, UNLESS this fork has k
     </message>
     <message>
         <location filename="../src/wallet/wallet2.cpp" line="1762"/>
-        <source>Password is needed to compute key image for incoming phiblock</source>
+        <source>Password is needed to compute key image for incoming monero</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/wallet/wallet2.cpp" line="1763"/>
-        <source>Invalid password: password is needed to compute key image for incoming phiblock</source>
+        <source>Invalid password: password is needed to compute key image for incoming monero</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6133,7 +6133,7 @@ WARNING: Do not reuse your Phiblock keys on another fork, UNLESS this fork has k
     </message>
     <message>
         <location filename="../src/wallet/wallet_rpc_server.cpp" line="4492"/>
-        <source>This is the RPC phiblock wallet. It needs to connect to a phiblock
+        <source>This is the RPC monero wallet. It needs to connect to a monero
 daemon to work correctly.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6251,7 +6251,7 @@ daemon to work correctly.</source>
     </message>
     <message>
         <location filename="../src/wallet/wallet_args.cpp" line="148"/>
-        <source>This is the command line phiblock wallet. It needs to connect to a phiblock
+        <source>This is the command line monero wallet. It needs to connect to a monero
 daemon to work correctly.</source>
         <translation type="unfinished"></translation>
     </message>

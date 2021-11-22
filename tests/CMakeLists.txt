@@ -149,10 +149,10 @@ foreach(BENCH IN LISTS MONERO_WALLET_CRYPTO_BENCH)
 endforeach ()
 
 configure_file("${CMAKE_CURRENT_SOURCE_DIR}/benchmark.h.in" "${MONERO_GENERATED_HEADERS_DIR}/tests/benchmark.h")
-add_executable(phiblock-wallet-crypto-bench benchmark.cpp ${BENCH_OBJECTS})
-target_link_libraries(phiblock-wallet-crypto-bench cncrypto)
+add_executable(monero-wallet-crypto-bench benchmark.cpp ${BENCH_OBJECTS})
+target_link_libraries(monero-wallet-crypto-bench cncrypto)
 
-add_test(NAME wallet-crypto-bench COMMAND phiblock-wallet-crypto-bench)
+add_test(NAME wallet-crypto-bench COMMAND monero-wallet-crypto-bench)
 
 
 set(enabled_tests
