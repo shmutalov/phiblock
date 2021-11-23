@@ -1,5 +1,5 @@
 /// @file
-/// @author rfree (current maintainer/user in phiblock.cc project - most of code is from CryptoNote)
+/// @author rfree (current maintainer/user in monero.cc project - most of code is from CryptoNote)
 /// @brief This is the original cryptonote protocol network-events handler, modified by us
 
 // Copyright (c) 2014-2020, The Monero Project
@@ -153,6 +153,7 @@ namespace cryptonote
             context.m_last_request_time = boost::date_time::not_a_date_time;
             context.m_expect_response = 0;
             context.m_expect_height = 0;
+            context.m_requested_objects.clear();
             context.m_state = cryptonote_connection_context::state_standby; // we'll go back to adding, then (if we can't), download
           }
           else
@@ -630,7 +631,7 @@ namespace cryptonote
           }
           
           // hijacking m_requested objects in connection context to patch up
-          // a possible DOS vector pointed out by @phiblock-moo where peers keep
+          // a possible DOS vector pointed out by @monero-moo where peers keep
           // sending (0...n-1) transactions.
           // If requested objects is not empty, then we must have asked for 
           // some missing transacionts, make sure that they're all there.
@@ -674,7 +675,7 @@ namespace cryptonote
             // future todo: 
             // tx should only not be added to pool if verification failed, but
             // maybe in the future could not be added for other reasons 
-            // according to phiblock-moo so keep track of these separately ..
+            // according to monero-moo so keep track of these separately ..
             //
           }
         }
@@ -1150,7 +1151,7 @@ namespace cryptonote
       auto time_from_epoh = point.time_since_epoch();
       auto sec = duration_cast< seconds >( time_from_epoh ).count();*/
 
-    //epee::net_utils::network_throttle_manager::get_global_throttle_inreq().logger_handle_net("log/dr-phiblock/net/req-all.data", sec, get_avg_block_size());
+    //epee::net_utils::network_throttle_manager::get_global_throttle_inreq().logger_handle_net("log/dr-monero/net/req-all.data", sec, get_avg_block_size());
 
     if(arg.blocks.empty())
     {
@@ -2322,7 +2323,7 @@ skip:
         context.m_expect_response = NOTIFY_RESPONSE_GET_OBJECTS::ID;
         MLOG_P2P_MESSAGE("-->>NOTIFY_REQUEST_GET_OBJECTS: blocks.size()=" << req.blocks.size()
             << "requested blocks count=" << count << " / " << count_limit << " from " << span.first << ", first hash " << req.blocks.front());
-        //epee::net_utils::network_throttle_manager::get_global_throttle_inreq().logger_handle_net("log/dr-phiblock/net/req-all.data", sec, get_avg_block_size());
+        //epee::net_utils::network_throttle_manager::get_global_throttle_inreq().logger_handle_net("log/dr-monero/net/req-all.data", sec, get_avg_block_size());
 
         MDEBUG("Asking for " << (req.prune ? "pruned" : "full") << " data, start/end "
           << tools::get_pruning_stripe(span.first, context.m_remote_blockchain_height, CRYPTONOTE_PRUNING_LOG_STRIPES)
@@ -2397,7 +2398,7 @@ skip:
 
       //std::string blob; // for calculate size of request
       //epee::serialization::store_t_to_binary(r, blob);
-      //epee::net_utils::network_throttle_manager::get_global_throttle_inreq().logger_handle_net("log/dr-phiblock/net/req-all.data", sec, get_avg_block_size());
+      //epee::net_utils::network_throttle_manager::get_global_throttle_inreq().logger_handle_net("log/dr-monero/net/req-all.data", sec, get_avg_block_size());
       //LOG_PRINT_CCONTEXT_L1("r = " << 200);
 
       context.m_last_request_time = boost::posix_time::microsec_clock::universal_time();
