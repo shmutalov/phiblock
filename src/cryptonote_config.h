@@ -217,7 +217,7 @@ namespace config
   boost::uuids::uuid const NETWORK_ID = { {
       0x20, 0x31, 0xF0, 0x12, 0x60, 0x01, 0x40, 0x60, 0x28, 0x33, 0x01, 0x80, 0x25, 0xA1, 0xA1, 0x20
     } }; // Bender's nightmare
-  std::string const GENESIS_TX = "01" "0a" "01" "ff" "00" "01"
+  std::string const GENESIS_TX = "01" "3c" "01" "ff" "00" "01"
                                  "ffffffffffff03" "02"
                                  "9b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd088071"
                                  "21" "01"
