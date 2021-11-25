@@ -1532,7 +1532,7 @@ void cn_slow_hash(const void *data, size_t length, char *hash, int variant, int 
       p = &long_state[j];
       aesb_single_round(p, c1, a);
 
-      VARIANT2_PORTABLE_SHUFFLE_ADD(c1, a, long_state, j);
+      VARIANT2_PORTABLE_SHUFFLE_ADD(c1, a, long_state, j, true /*reverse*/);
       copy_block(p, c1);
       xor_blocks(p, b);
       VARIANT1_1(p);
@@ -1547,7 +1547,7 @@ void cn_slow_hash(const void *data, size_t length, char *hash, int variant, int 
       VARIANT4_RANDOM_MATH(a1, c, r, b, b + AES_BLOCK_SIZE);
       mul(c1, c, d);
       VARIANT2_2_PORTABLE();
-      VARIANT2_PORTABLE_SHUFFLE_ADD(c1, a, long_state, j);
+      VARIANT2_PORTABLE_SHUFFLE_ADD(c1, a, long_state, j, true /*reverse*/);
       sum_half_blocks(a1, d);
       swap_blocks(a1, c);
       xor_blocks(a1, c);
@@ -1725,7 +1725,7 @@ void cn_slow_hash(const void *data, size_t length, char *hash, int variant, int 
     j = e2i(a, MEMORY / AES_BLOCK_SIZE) * AES_BLOCK_SIZE;
     copy_block(c1, &long_state[j]);
     aesb_single_round(c1, c1, a);
-    VARIANT2_PORTABLE_SHUFFLE_ADD(c1, a, long_state, j);
+    VARIANT2_PORTABLE_SHUFFLE_ADD(c1, a, long_state, j, true /*reverse*/);
     copy_block(&long_state[j], c1);
     xor_blocks(&long_state[j], b);
     assert(j == e2i(a, MEMORY / AES_BLOCK_SIZE) * AES_BLOCK_SIZE);
@@ -1738,7 +1738,7 @@ void cn_slow_hash(const void *data, size_t length, char *hash, int variant, int 
     VARIANT4_RANDOM_MATH(a1, c2, r, b, b + AES_BLOCK_SIZE);
     mul(c1, c2, d);
     VARIANT2_2_PORTABLE();
-    VARIANT2_PORTABLE_SHUFFLE_ADD(c1, a, long_state, j);
+    VARIANT2_PORTABLE_SHUFFLE_ADD(c1, a, long_state, j, true /*reverse*/);
     sum_half_blocks(a1, d);
     swap_blocks(a1, c2);
     xor_blocks(a1, c2);
