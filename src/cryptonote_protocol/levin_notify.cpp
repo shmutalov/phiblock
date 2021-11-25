@@ -88,7 +88,7 @@ namespace levin
         compared to incoming. The thinking is that the user controls outgoing
         connections (Dandelion++ makes similar assumptions in its stem
         algorithm). The randomization yields 95% values between 1s-4s in
-	1/4s increments. */
+    1/4s increments. */
     using fluff_duration = crypto::random_poisson_subseconds::result_type;
     constexpr const fluff_duration fluff_average_out{fluff_duration{fluff_average_in} / 2};
 
@@ -346,7 +346,7 @@ namespace levin
           channel.queue.push_back(std::move(message_));
         else if (destination_ == 0 && zone_->connection_count == 0)
           MWARNING("Unable to send transaction(s) to " << epee::net_utils::zone_to_string(zone_->nzone) <<
-			" - no available outbound connections");
+            " - no available outbound connections");
       }
     };
 
@@ -400,10 +400,10 @@ namespace levin
         }
 
         /* Always send with `fluff` flag, even over i2p/tor. The hidden service
-	   will disable the forwarding delay and immediately fluff. The i2p/tor
-	   network is therefore replacing the sybil protection of Dandelion++.
-	   Dandelion++ stem phase over i2p/tor is also worth investigating
-	   (with/without "noise"?). */
+       will disable the forwarding delay and immediately fluff. The i2p/tor
+       network is therefore replacing the sybil protection of Dandelion++.
+       Dandelion++ stem phase over i2p/tor is also worth investigating
+       (with/without "noise"?). */
         for (auto& connection : connections)
         {
           std::sort(connection.first.begin(), connection.first.end()); // don't leak receive order
@@ -684,7 +684,7 @@ namespace levin
             auto connections = get_out_connections(*zone_->p2p, height);
             if (connections.empty())
               MWARNING("Unable to send transaction(s) to " << epee::net_utils::zone_to_string(zone_->nzone) <<
-			" - no suitable outbound connections at height " << height);
+            " - no suitable outbound connections at height " << height);
 
             zone_->strand.post(update_channels{zone_, std::move(connections)});
           }
