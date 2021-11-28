@@ -56,7 +56,7 @@ This is the core implementation of PhiBlock. It is open source and completely fr
 
 As with many development projects, the repository on Github is considered to be the "staging" area for the latest changes. Before changes are merged into that branch on the main repository, they are tested by individual developers in their own branches, submitted as a pull request, and then subsequently tested by contributors who focus on testing and code reviews. That having been said, the repository should be carefully considered before using it in a production environment, unless there is a patch in the repository for a particular show-stopping issue you are experiencing. It is generally a better idea to use a tagged release for stability.
 
-**Anyone is welcome to contribute to PhiBlock's codebase!** If you have a fix or code change, feel free to submit it as a pull request directly to the "master" branch. In cases where the change is relatively small or does not affect other parts of the codebase, it may be merged in immediately by any one of the collaborators. On the other hand, if the change is particularly large or complex, it is expected that it will be discussed at length either well in advance of the pull request being submitted, or even directly on the pull request.
+**Anyone is welcome to contribute to PhiBlock's codebase!** If you have a fix or code change, feel free to submit it as a pull request directly to the "main" branch. In cases where the change is relatively small or does not affect other parts of the codebase, it may be merged in immediately by any one of the collaborators. On the other hand, if the change is particularly large or complex, it is expected that it will be discussed at length either well in advance of the pull request being submitted, or even directly on the pull request.
 
 ## Supporting the project
 
@@ -147,7 +147,7 @@ invokes cmake commands as needed.
 
     ```bash
     cd phiblock
-    git checkout master
+    git checkout main
     make
     ```
 
@@ -158,7 +158,7 @@ invokes cmake commands as needed.
 
     *Note*: The instructions above will compile the most stable release of the
     PhiBlock software. If you would like to use and test the most recent software,
-    use ```git checkout master```. The master branch may contain updates that are
+    use ```git checkout main```. The main branch may contain updates that are
     both unstable and incompatible with release software, though testing is always
     encouraged.
 
@@ -220,7 +220,7 @@ Tested on a Raspberry Pi Zero with a clean install of minimal Raspbian Stretch (
     ```bash
     git clone https://github.com/phiblock-project/phiblock.git
     cd phiblock
-    git checkout master
+    git checkout main
     ```
 
 * Build:
@@ -337,7 +337,7 @@ application.
     cd phiblock
     ```
 
-* If you would like a specific [version/tag](https://github.com/phiblock-project/phiblock/tags), do a git checkout for that version. eg. 'v0.0.0.1'. If you don't care about the version and just want binaries from master, skip this step:
+* If you would like a specific [version/tag](https://github.com/phiblock-project/phiblock/tags), do a git checkout for that version. eg. 'v0.0.0.1'. If you don't care about the version and just want binaries from main, skip this step:
 
     ```bash
     git checkout v0.0.0.1
